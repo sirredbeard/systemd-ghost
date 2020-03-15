@@ -1,0 +1,3 @@
+ghostadmin ALL=(ALL) NOPASSWD: /bin/systemctl is-active ghost_website 
+ghostadmin ALL=(ALL) NOPASSWD: /bin/systemctl stop ghost_website 
+ghostadmin ALL=(ALL) NOPASSWD: /bin/systemctl start ghost_website 

@@ -1,0 +1,10 @@
+[Unit]
+Description=Update ghost instance automatically with systemd
+Wants=update_npm.service                                                                                                                
+After=update_npm.service 
+
+[Service]
+Type=oneshot
+User=1000
+WorkingDirectory=/var/www/ghost
+ExecStart=/usr/bin/ghost update --no-prompt --auto

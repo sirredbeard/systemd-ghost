@@ -1,0 +1,9 @@
+[Unit]
+Description=Update ghost instance automatically with systemd after boot and weekly
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=1w
+
+[Install]
+WantedBy=timers.target

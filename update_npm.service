@@ -1,0 +1,7 @@
+[Unit]
+Description=Update npm and ghost-cli automatically with systemd
+
+[Service]
+Type=oneshot
+ExecStartPre=/usr/bin/npm install -g npm
+ExecStart=/usr/bin/npm i -g ghost-cli@latest
